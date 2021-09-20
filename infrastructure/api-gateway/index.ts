@@ -1,12 +1,16 @@
 import * as aws from '@pulumi/aws'
 import * as awsx from '@pulumi/awsx'
 import * as pulumi from '@pulumi/pulumi'
+import { apiGatewayWhiskys } from './routes/whisky'
+import { apiGatewayWines } from './routes/wine'
 
 export const apiGateway = new awsx.apigateway.API(
     'rest-api',
     {
       stageName: pulumi.getStack(),
       routes: [
+          ...apiGatewayWhiskys,
+          ...apiGatewayWines,
         {
           path: '/{proxy+}',
           method: 'OPTIONS',
