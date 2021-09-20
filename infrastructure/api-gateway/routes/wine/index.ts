@@ -1,4 +1,3 @@
-import { listWhiskysLambda } from "../../../lambdas/whisky/list-whisky";
 import * as awsx from '@pulumi/awsx'
 import { listWinesLambda } from "../../../lambdas/wine/list-wine";
 
