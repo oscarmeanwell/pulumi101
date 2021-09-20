@@ -11,3 +11,8 @@ export const apiGatewayWines: awsx.apigateway.Route[] = [
     },
   ]
   
+
+/** Authoriser for end users */
+// export const endUserAuthoriser = awsx.apigateway.getCognitoAuthorizer({
+//     providerARNs: [appUsersPool.arn, adminUsersPool.arn],
+//   })
