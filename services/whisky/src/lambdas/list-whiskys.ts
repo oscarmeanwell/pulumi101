@@ -6,5 +6,5 @@ export const handler: APIGatewayProxyHandler = async (
   context,
   callback,
 ): Promise<APIGatewayProxyResult> => {
-  
+  return {body: 'Test', statusCode: 200}
 }
