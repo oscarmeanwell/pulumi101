@@ -5,7 +5,7 @@
     "main": "index.js",
     "author": "Oscar",
     "license": "MIT",
-    "private": false,
+    "private": true,
     "engines": {
       "node": "12"
     },

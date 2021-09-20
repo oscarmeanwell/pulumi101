@@ -6,7 +6,7 @@
     "repository": "https://github.com/oscarmeanwell/pulumi101",
     "author": "Oscar Meanwell",
     "license": "MIT",
-    "private":  false,
+    "private":  true,
     "workspaces": {
       "packages": [
         "services/*"
