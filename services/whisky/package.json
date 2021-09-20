@@ -1,0 +1,28 @@
+{
+    "name": "@pulumi101/whisky-service",
+    "version": "0.0.1",
+    "description": "Whisky service for the drinks api",
+    "main": "index.js",
+    "author": "Oscar",
+    "license": "MIT",
+    "private": false,
+    "engines": {
+      "node": "12"
+    },
+    "scripts": {
+      "prebuild": "rm -rf dist/",
+      "build": "tsc",
+      "watch": "tsc -w",
+      "package": "./scripts/package.sh"
+    },
+    "dependencies": {
+      "jsonwebtoken": "^8.5.1",
+      "jwk-to-pem": "^2.0.5",
+      "nanoid": "^3.1.22"
+    },
+    "devDependencies": {
+      "@types/jsonwebtoken": "^8.5.1",
+      "@types/jwk-to-pem": "^2.0.0"
+    }
+  }
+  
