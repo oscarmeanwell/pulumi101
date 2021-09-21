@@ -1,5 +1,4 @@
-import './dynamo-db'
-import { apiGateway } from './api-gateway'
-//import './lambdas'
+import "./dynamo-db";
+import { apiGateway } from "./api-gateway";
 
-export const apiUrl = apiGateway.url
+export const apiUrl = apiGateway.url;
