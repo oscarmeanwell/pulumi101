@@ -56,9 +56,9 @@ const listWinesRole = new aws.iam.Role(
     'lambda-api-listWines',
     {
       code: new pulumi.asset.FileArchive(
-        'services/products/wine-service-lambdas.zip',
+        'services/wine/wine-service-lambdas.zip',
       ),
-      handler: 'services/wines/src/lambdas/list-wines.handler',
+      handler: 'services/wine/src/lambdas/list-wines.handler',
       role: listWinesRole.arn,
       runtime: 'nodejs14.x',
       timeout: 120,

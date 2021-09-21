@@ -1,6 +1,5 @@
 import './dynamo-db'
 import { apiGateway } from './api-gateway'
-import './cognito'
-import './lambdas'
+//import './lambdas'
 
 export const apiUrl = apiGateway.url
