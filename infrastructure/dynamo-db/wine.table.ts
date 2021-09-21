@@ -13,6 +13,12 @@ export const ddbTableWines= new aws.dynamodb.Table(
       billingMode: 'PAY_PER_REQUEST',
       hashKey: 'id',
       name: 'ddbTable-Wines',
+    //   globalSecondaryIndexes: [{
+    //     hashKey: 'wine',
+    //     name: 'WineCreatedAtIndex',
+    //     projectionType: 'ALL',
+    //     rangeKey: 'createdAt',
+    //   }]
     },
     {
       protect: true,
